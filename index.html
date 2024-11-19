@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="https://www.pngmart.com/files/3/Weather-PNG-Free-Download.png" type="image/x-icon">
+    <!-- Afin de pouvoir utiliser nos gauges-->
+    <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+    <!-- Afin de pouvoir utiliser le jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Afin d'utiliser le graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+
+    <h1>Page météo</h1>
+    <main>
+        <aside id="tech">
+            <h1>Données du Tech</h1>
+
+            <h3>Température</h3>
+            <canvas id='g1'></canvas>
+            <h4 id="temp_tech"></h4>
+
+            <h3>Préssion</h3>
+            <canvas id='g2'></canvas>
+            <h4 id="pressure_tech"></h4>
+
+            <h3>Humidité</h3>
+            <canvas id='g3'></canvas>
+            <h4 id="humidity_tech"></h4>
+        </aside>
+
+        <article id="actuel"></article>
+
+    </main>
+
+    <div>
+        <h1>Données de la semaine</h1>
+        <article id="futur"></article>
+    </div>
+
+    <script src="gauges.js"></script>
+    <script src="tech.js"></script>
+    <script src="ville.js"></script>
+</body>
+
+</html>
